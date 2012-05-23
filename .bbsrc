@@ -1,0 +1,16 @@
+editor vi
+site bbs.iscabbs.com 23
+commandkey ^[
+quit ^D
+susp ^Z
+shell !
+capture c
+awaykey a
+squelch 0
+browser 0 netscape -remote
+autoname Feoh
+autopass fDc<_@-t
+color 236100056251233000432222
+autoansi
+a1 I'm away from my keyboard right now.
+version 238
