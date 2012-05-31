@@ -32,7 +32,12 @@ ZSH_THEME="tjkirch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi brew cap gem osx)
+export SYSTYPE=`uname -s`
+plugins=(git vi cap gem)
+
+if [ "$SYSTYPE" = "Darwin" ]; then
+    plugins=($plugins brew osx)
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -40,8 +45,18 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/ruby:/usr/local/share/python:~/bin:$PATH
+
+if [ "$SYSTYPE" = "Linux" ]; then
+    export PATH=$PATH:/home/php/bin:/home/mysql/bin:/home/build/bin
+fi
+
 export PAGER='vimpager'
-export EDITOR='mvim -f'
+if [ "$SYSTYPE" = "Darwin" ]; then
+    export EDITOR='mvim -f'
+else
+    export EDITOR='vim'
+fi
+
 export NODE_PATH=/usr/local/lib/node
 export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 alias home='ssh -D 1080 feoh@linode.feoh.org -p 1968'
