@@ -33,7 +33,7 @@ ZSH_THEME="tjkirch"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 export SYSTYPE=`uname -s`
-plugins=(git vi cap gem)
+plugins=(git vi vundle cap gem)
 
 if [ "$SYSTYPE" = "Darwin" ]; then
     plugins=($plugins brew osx)
