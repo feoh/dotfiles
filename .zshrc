@@ -37,6 +37,7 @@ plugins=(git vi vundle cap gem)
 
 if [ "$SYSTYPE" = "Darwin" ]; then
     plugins=($plugins brew osx)
+    export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -58,7 +59,6 @@ else
 fi
 
 export NODE_PATH=/usr/local/lib/node
-export HAXE_LIBRARY_PATH="`brew --prefix`/share/haxe/std"
 alias home='ssh -D 1080 feoh@linode.feoh.org -p 1968'
 alias bi='ssh -L3306:build1:3306 -L1099:build1:1099 -L8080:build1:8080 -L8000:build1:8000 build1.bluestatedigital.com'
 alias b1='ssh build1.bluestatedigital.com'
