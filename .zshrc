@@ -32,6 +32,14 @@ ZSH_THEME="tjkirch"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+
+# Make custom PATH additions first.
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/ruby:/usr/local/share/python:~/bin:$PATH
+
+if [ "$SYSTYPE" = "Linux" ]; then
+    export PATH=$PATH:/home/php/bin:/home/mysql/bin:/home/build/bin
+fi
+
 export SYSTYPE=`uname -s`
 plugins=(git vi vundle cap gem)
 
@@ -45,11 +53,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 bindkey -v
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/ruby:/usr/local/share/python:~/bin:$PATH
-
-if [ "$SYSTYPE" = "Linux" ]; then
-    export PATH=$PATH:/home/php/bin:/home/mysql/bin:/home/build/bin
-fi
 
 export PAGER='vimpager'
 if [ "$SYSTYPE" = "Darwin" ]; then
