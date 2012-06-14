@@ -52,8 +52,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-bindkey -v
-
 export PAGER='vimpager'
 if [ "$SYSTYPE" = "Darwin" ]; then
     export EDITOR='mvim -f'
