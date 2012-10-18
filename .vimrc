@@ -6,13 +6,10 @@ set expandtab
 set backspace=indent,eol,start
 
 syntax on
+filetype plugin on
 
 set nocompatible               " be iMproved
 
-let VIMPRESS = [{'username':'feoh',
-                \'password':'n3v3r3@5y',
-                \'blog_url':'http://www.feoh.org/'
-                \}] 
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -32,5 +29,7 @@ Bundle "snipmate-snippets"
 Bundle "garbas/vim-snipmate"
 Bundle "ack.vim"
 Bundle "The-NERD-tree"
-
-
+Bundle "Command-T"
+Bundle "surround.vim"
+Bundle "PIV"
+Bundle "The-NERD-Commenter"
