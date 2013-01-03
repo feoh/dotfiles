@@ -1,13 +1,5 @@
-set ts=4
-set sw=4
-set sts=4
-set expandtab
-
-set backspace=indent,eol,start
-
-syntax on
-filetype plugin on
-
+" Required by Vundle
+filetype off
 set nocompatible               " be iMproved
 
 
@@ -32,5 +24,22 @@ Bundle "The-NERD-tree"
 Bundle "Command-T"
 Bundle "surround.vim"
 Bundle "PIV"
+Bundle "VimClojure"
+Bundle "futigive.vim"
 Bundle "The-NERD-Commenter"
-Bundle "fugitive.vim"
+
+" CAP's personal initialization stuff.
+
+
+set ts=4
+set sw=4
+set sts=4
+set expandtab
+
+set backspace=indent,eol,start
+
+syntax on
+filetype on
+filetype plugin on
+
+let vimclojure#WantNailgun = 1
