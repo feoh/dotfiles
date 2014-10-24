@@ -1,45 +1,38 @@
-" Required by Vundle
-filetype off
-set nocompatible               " be iMproved
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  set nocompatible               " Be iMproved
 
+  " Required:
+  set runtimepath+=/home/cpatti/.vim/bundle/neobundle.vim/
+endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" Required:
+call neobundle#begin(expand('/home/cpatti/.vim/bundle'))
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
-"
-" original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "snipmate-snippets"
-Bundle "garbas/vim-snipmate"
-Bundle "ack.vim"
-Bundle "rails.vim"
-Bundle "The-NERD-tree"
-Bundle "Command-T"
-Bundle "surround.vim"
-Bundle "VimClojure"
-Bundle "futigive.vim"
-Bundle "The-NERD-Commenter"
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'The-NERD-tree'
+NeoBundle 'The-NERD-Commenter'
+NeoBundle 'ack.vim'
+NeoBundle 'dougireton/vim-chef.git'
 
-" CAP's personal initialization stuff.
+" You can specify revision/branch/tag.
+"#NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
+" Required:
+call neobundle#end()
 
-set ts=4
-set sw=4
-set sts=4
-set expandtab
+" Required:
+filetype plugin indent on
 
-set backspace=indent,eol,start
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
-syntax on
-filetype on
-filetype plugin on
-
-let vimclojure#WantNailgun = 1
