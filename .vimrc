@@ -19,8 +19,10 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'The-NERD-tree'
 NeoBundle 'The-NERD-Commenter'
-NeoBundle 'ack.vim'
+NeoBundle 'ag.vim'
 NeoBundle 'dougireton/vim-chef.git'
+NeoBundle 'klen/python-mode'
+NeoBundle 'scrooloose/syntastic'
 
 " You can specify revision/branch/tag.
 "#NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -36,3 +38,9 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+" Chris Patti customizations
+let NERDTreeShowHidden=1
+
+" Pylint configuration file
+let g:pymode_lint_config = '$HOME/.pylint.rc'
+let g:pymode_options_max_line_length=120
