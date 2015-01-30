@@ -51,11 +51,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-alias home='ssh -i ~/.ssh/id_rsa_personal feoh@linode.feoh.org'
+alias home='ssh -v -D 8907 -i ~/.ssh/id_rsa_personal feoh@linode.feoh.org'
 alias toycraft='ssh feoh@toycraft.feoh.org'
-alias nukevagrant="knife node delete -y cpatti-vagrant;knife client delete -y cpatti-vagrant"
+alias nukevagrant='knife node delete -y cpatti-vagrant;knife client delete -y cpatti-vagrant'
+alias gpom='git pull origin master'
+alias gcm='git checkout master'
+alias gprom='git pull --rebase origin master'
 source /usr/local/bin/z.sh
 
 export PATH="/home/cpatti/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+PERL_MB_OPT="--install_base \"/home/cpatti/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/cpatti/perl5"; export PERL_MM_OPT;

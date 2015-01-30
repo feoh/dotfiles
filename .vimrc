@@ -44,3 +44,4 @@ let NERDTreeShowHidden=1
 " Pylint configuration file
 let g:pymode_lint_config = '$HOME/.pylint.rc'
 let g:pymode_options_max_line_length=120
+let g:syntastic_python_pylint_post_args="--max-line-length=120"
