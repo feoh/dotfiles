@@ -3,17 +3,18 @@ if has('vim_starting')
   set nocompatible               " Be iMproved
 
   " Required:
-  set runtimepath+=/home/cpatti/.vim/bundle/neobundle.vim/
+  set runtimepath+=/Users/cpatti/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
-call neobundle#begin(expand('/home/cpatti/.vim/bundle'))
+call neobundle#begin(expand('/Users/cpatti/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " My Bundles here:
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
@@ -21,8 +22,8 @@ NeoBundle 'The-NERD-tree'
 NeoBundle 'The-NERD-Commenter'
 NeoBundle 'ag.vim'
 NeoBundle 'dougireton/vim-chef.git'
-NeoBundle 'klen/python-mode'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'nvie/vim-flake8.git'
 
 " You can specify revision/branch/tag.
 "#NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -40,8 +41,8 @@ NeoBundleCheck
 
 " Chris Patti customizations
 let NERDTreeShowHidden=1
-
+" Enable Neosnippet
+let g:neocomplete#enable_at_startup = 1
 " Pylint configuration file
-let g:pymode_lint_config = '$HOME/.pylint.rc'
-let g:pymode_options_max_line_length=120
 let g:syntastic_python_pylint_post_args="--max-line-length=120"
+:syntax on
