@@ -1,0 +1,40 @@
+cd ..
+ls
+kitchen converge
+kitchen login
+exit
+pwd
+echo $SHELL
+pwd
+pwd
+ls -ld .
+cd /Users/cpatti/
+ls
+more .bashrc 
+cat ~/.bashrc
+ls -ld .bash*
+ls /users/cpatti/Dropbox/Mackup/
+cp .bahrc /tmp
+cp .bashrc /tmp
+cp .bash_profile /tmp
+ls -ld .bash_it
+ls /Users/cpatti/Dropbox/Mackup/.bash_it/
+mackup --help
+mackup
+brew install mackup
+/usr/local/bin/brew 
+/usr/local/bin/mackup --help
+/usr/local/bin/mackup --uninstall
+/usr/local/bin/mackup uninstall
+/usr/local/bin/mackup uninstall
+exit
+ls -ld .bashrc
+cat .bashrc
+ls -ld .bash_profile
+cat .emacs
+ps -deaf | grep bash
+ps -deaf | grep sh
+ps -deaf | more
+ps -deaf 
+mv .bash_profile .not_bash_profile
+mv .bashrc .not_bashrc

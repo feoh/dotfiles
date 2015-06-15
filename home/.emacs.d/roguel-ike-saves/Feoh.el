@@ -1,0 +1,1 @@
+("Feoh" :troll (:health 10 :stamina 5 :strength 10 :constitution 10 :speed 3 :spirit 0))
