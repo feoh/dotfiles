@@ -14,8 +14,8 @@ export BASH_IT_THEME='candy'
 #export GIT_HOSTING='git@git.domain.com'
 
 # Set my editor and git editor
-export EDITOR='vim' 
-export GIT_EDITOR='vim'
+export EDITOR='emacs'
+export GIT_EDITOR='emacs'
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
