@@ -5,3 +5,9 @@
 (setq twittering-use-master-password t)
 
 (setq magit-last-seen-setup-instructions "1.4.0")
+
+(ido-mode 1)
+(setq ido-everywhere t)
+(setq ido-enable-flex-matching t)
+
+(require 'helm-config)
