@@ -59,5 +59,8 @@ alias gcm='git checkout master'
 alias gprom='git pull --rebase origin master'
 source /usr/local/bin/z.sh
 
+export EDITOR=emacs
+export VISUAL=emacs
+
 export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
