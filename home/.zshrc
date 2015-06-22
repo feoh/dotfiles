@@ -59,9 +59,8 @@ alias gcm='git checkout master'
 alias gprom='git pull --rebase origin master'
 source /usr/local/bin/z.sh
 
-export PATH="/home/cpatti/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export EDITOR=emacs
+export VISUAL=emacs
 
-PERL_MB_OPT="--install_base \"/home/cpatti/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/cpatti/perl5"; export PERL_MM_OPT;
+export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
