@@ -1,5 +1,7 @@
 (add-to-list 'default-frame-alist '(font . "Menlo:pixelsize=24:weight=normal:slant=normal:width=normal:spacing=100:scalable=true" ))
 
+(server-start)
+
 (require 'twittering-mode)
 
 (setq twittering-use-master-password t)
@@ -11,3 +13,8 @@
 (setq ido-enable-flex-matching t)
 
 (require 'helm-config)
+
+(add-to-list 'load-path "~/.emacs.d/elisp/")
+
+(load-library "package_sync")
+
