@@ -1,6 +1,5 @@
 (add-to-list 'default-frame-alist '(font . "Menlo:pixelsize=24:weight=normal:slant=normal:width=normal:spacing=100:scalable=true" ))
 
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -36,9 +35,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
-(require 'pungi)
-(add-hook #'python-mode-hook
-          '(lambda ()
-             (pungi:setup-jedi)))
+(add-hook 'python-mode-hook 'anaconda-mode)
 
 

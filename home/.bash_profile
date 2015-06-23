@@ -42,5 +42,6 @@ alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
 alias t="/Users/cpatti/.chefdk/gem/ruby/2.1.0/bin/t"
 eval "$(chef shell-init bash)"
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+# added by Anaconda 2.2.0 installer
+export PATH="$HOME/anaconda/bin:$PATH"
