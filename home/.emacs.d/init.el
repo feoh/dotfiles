@@ -1,5 +1,21 @@
 (add-to-list 'default-frame-alist '(font . "Menlo:pixelsize=24:weight=normal:slant=normal:width=normal:spacing=100:scalable=true" ))
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(require 'package)
+(push '("marmalade" . "http://marmalade-repo.org/packages/")
+     package-archives )
+(push '("melpa" . "http://melpa.milkbox.net/packages/")
+              package-archives)
+
+(setq custom-file (concat user-emacs-directory "custom.el"))
+(load custom-file t)
+
 (require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
 (cask-initialize)
 (require 'pallet)
