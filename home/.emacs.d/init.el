@@ -36,5 +36,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
+(require 'pungi)
+(add-hook #'python-mode-hook
+          '(lambda ()
+             (pungi:setup-jedi)))
 
 
