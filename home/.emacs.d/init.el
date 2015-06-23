@@ -1,5 +1,9 @@
 (add-to-list 'default-frame-alist '(font . "Menlo:pixelsize=24:weight=normal:slant=normal:width=normal:spacing=100:scalable=true" ))
 
+(require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
+(cask-initialize)
+(require 'pallet)
+(pallet-mode t)
 (server-start)
 
 (require 'twittering-mode)
@@ -16,5 +20,5 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
-(load-library "package_sync")
+
 
