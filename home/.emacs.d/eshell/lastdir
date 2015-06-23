@@ -1,5 +1,13 @@
 /Users/cpatti/Dropbox/src/chef/pelican_blog/recipes
 /Users/cpatti/Dropbox/src/chef/pelican_blog
+/scp:root@s43-infratest-knife01:/root
 ~
+~
+/Users/cpatti/src/carbonite/Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure/carbpyinfra
 /Users/cpatti
-~
+/scp:root@s43-qg2-bld001:/root
+/scp:root@s43-qg2-bld001:/root/chris
+/scp:root@s43-qg2-bld001:/root/chris/Server-4.3-Linux
+/scp:root@s43-qg2-bld001:/root/chris/Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure
+/Users/cpatti/src/carbonite/chef-repo/cookbooks/s43-conversion/files/default
+/Users/cpatti

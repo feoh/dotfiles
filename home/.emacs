@@ -23,7 +23,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (magit erc-hl-nicks vlf twittering-mode rspec-mode roguel-ike robe python-mode pytest pyenv-mode org-trello org markdown-mode jedi ipython go-play go-mode evil-visual-mark-mode ein-mumamo company-web company-restclient company-inf-ruby company-go company-anaconda circe chef-mode ag))))
+    (helm magit erc-hl-nicks vlf twittering-mode rspec-mode roguel-ike robe python-mode pytest pyenv-mode org-trello org markdown-mode jedi ipython go-play go-mode evil-visual-mark-mode ein-mumamo company-web company-restclient company-inf-ruby company-go company-anaconda circe chef-mode ag))))
 
 
 (custom-set-faces

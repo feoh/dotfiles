@@ -38,3 +38,46 @@ ps -deaf | more
 ps -deaf 
 mv .bash_profile .not_bash_profile
 mv .bashrc .not_bashrc
+cd
+ssh chl-prod-jump
+ssh Could not resolve hostname chl-prod-jump: nodename nor servname provided, or not known
+ssh chl-prod-jump1
+ssh root@s43-infratest-pxechef01
+ssh s43-infratest-knife
+ssh s43-infratest-knife01
+ssh root@s43-infratest-knife01
+exit
+cd /root@s43-infratest-knife:~
+cd /root@s43-infratest-knife01:~
+sudo -u jumpboxaccess_emergency -s
+exit
+cd /jumpboxaccess_emergency@s43-infratest-knife01:~
+cd /ssh:cpatti@chl-prod-jump1|ssh chl-prod-knife01
+cd /ssh:cpatti@chl-prod-jump1|ssh chl-prod-knife1
+cd /ssh:cpatti@chl-prod-jump1|ssh chl-prod-knife
+cd
+cd /root@s43-qg3-bld001:~
+cd /root@s43-qg2-bld001
+cd /root@s43-qg2-bld001:~
+cd chris
+ls
+git fetch
+cd Server-4.3-Linux/
+ls
+git fetch
+git checkout fix_gate_deploy
+git pull origin fix_gate_deploy
+rm -f dist/*
+cd Server/Server/Library/CarboniteInfrastructure/
+ls
+python setup.py bdist_rpm
+ls
+cd python setup.py bdist_rpm
+python
+python setup.py bdist_rpm
+exit
+cd
+cd /cpatti@wak-prod-jump1|root@wak-s43-prod-copybox01:~
+cd /cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
+/cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
+exit
