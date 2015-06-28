@@ -81,3 +81,5 @@ cd /cpatti@wak-prod-jump1|root@wak-s43-prod-copybox01:~
 cd /cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
 /cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
 exit
+pwd
+exit

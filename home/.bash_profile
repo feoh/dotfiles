@@ -31,6 +31,7 @@ export IRC_CLIENT='irssi'
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
+
 export PATH="$HOME/bin:$HOME/anaconda/bin:/usr/local/bin:$PATH"
 
 alias gpom='git pull origin master'
