@@ -31,17 +31,10 @@ export IRC_CLIENT='irssi'
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-# CAP personal customizations for Gazelle
-# MySQL
-export MYSQL_HOME=/usr/local/mysql
-PATH=$MYSQL_HOME/bin:$PATH
-
-export PATH="~/bin:/usrlocal/bin:$PATH"
+export PATH="$HOME/bin:$HOME/anaconda/bin:/usr/local/bin:$PATH"
 
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
 alias t="/Users/cpatti/.chefdk/gem/ruby/2.1.0/bin/t"
 eval "$(chef shell-init bash)"
 
-# added by Anaconda 2.2.0 installer
-export PATH="$HOME/anaconda/bin:$PATH"

@@ -4,6 +4,4 @@ export PAGER=/usr/local/bin/vimpager
 alias less=$PAGER
 alias zless=$PAGER
 
-PATH=/usr/local/bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 

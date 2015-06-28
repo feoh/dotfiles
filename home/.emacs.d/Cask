@@ -40,6 +40,7 @@
 (depends-on "know-your-http-well")
 (depends-on "magit")
 (depends-on "markdown-mode")
+(depends-on "omni-scratch")
 (depends-on "org")
 (depends-on "org-trello")
 (depends-on "package-build")
