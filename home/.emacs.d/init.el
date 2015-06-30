@@ -1,9 +1,5 @@
 (add-to-list 'default-frame-alist '(font . "Menlo:pixelsize=24:weight=normal:slant=normal:width=normal:spacing=100:scalable=true" ))
 
-;; Add all the groovy locally installed packages to emacs exec path
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
-(setq exec-path (append exec-path '("/usr/local/bin")))
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -23,6 +19,10 @@
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 (server-start)
 
 (require 'twittering-mode)
