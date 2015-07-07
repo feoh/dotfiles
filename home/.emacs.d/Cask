@@ -19,8 +19,6 @@
 (depends-on "erc-hl-nicks")
 (depends-on "exec-path-from-shell")
 (depends-on "f")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
 (depends-on "go-mode")
 (depends-on "go-play")
 (depends-on "goto-chg")
