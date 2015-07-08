@@ -1,33 +1,3 @@
-cd ..
-ls
-kitchen converge
-kitchen login
-exit
-pwd
-echo $SHELL
-pwd
-pwd
-ls -ld .
-cd /Users/cpatti/
-ls
-more .bashrc 
-cat ~/.bashrc
-ls -ld .bash*
-ls /users/cpatti/Dropbox/Mackup/
-cp .bahrc /tmp
-cp .bashrc /tmp
-cp .bash_profile /tmp
-ls -ld .bash_it
-ls /Users/cpatti/Dropbox/Mackup/.bash_it/
-mackup --help
-mackup
-brew install mackup
-/usr/local/bin/brew 
-/usr/local/bin/mackup --help
-/usr/local/bin/mackup --uninstall
-/usr/local/bin/mackup uninstall
-/usr/local/bin/mackup uninstall
-exit
 ls -ld .bashrc
 cat .bashrc
 ls -ld .bash_profile
@@ -82,4 +52,77 @@ cd /cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
 /cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
 exit
 pwd
+exit
+cd
+homesick commit
+export EDITOR=emacsclient
+export VISUAL=emacsclient
+homesick commit
+homesick push
+cd
+echo $VISUAL
+echo $EDITOR
+exit
+echo $VISUAL
+echo $EDITOR
+exit
+cd
+clear
+
+pwd
+exit
+ssh wak-prod-jump1
+cd /ssh:cpatti@wak-prod-jump|ssh:root@wak-prod-knife
+cd /ssh:cpatti@wak-prod-jump|ssh:root@wak-prod-knife:
+cd /ssh:cpatti@wak-prod-jump:|ssh:root@wak-prod-knife:
+cd /ssh:cpatti@wak-prod-jump|ssh:root@wak-prod-knife:/
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:/
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
+cd /ssh:cpatti@wak-prod-jump1
+cd /cpatti@wak-prod-jump1
+cd cpatti@wak-prod-jump1
+cd /ssh:cpatti@wak-prod-jump1:/root
+cd /ssh:cpatti@wak-prod-jump1:/~
+cd /ssh:cpatti@wak-prod-jump1:
+ssh root@wak-prod-knife
+exit
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife"
+cd "/ssh:cpatti@wak-prod-jump1|root@wak-prod-knife"
+cd /ssh:cpatti@wak-prod-jump1|root@wak-prod-knife
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
+cd /ssh:cpatti@wak-prod-jump1|/ssh:root@wak-prod-knife
+cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
+exit
+cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
+cd ssh:cpatti@wak-prod-jump1
+cd /ssh:cpatti@wak-prod-jump1
+cd /ssh:cpatti@wak-prod-jump1:~
+exit
+cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
+cd /ssh:cpatti@wak-prod-jump1:~
+exit
+cd /ssh:cpatti@wak-prod-jump1:~
+cd ~
+cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:~
+cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:~
+cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:
+cd /ssh:cpatti@wak-prod-jump1:|ssh:root@wak-prod-knife:
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
+cd /ssh:cpatti@wak-prod-jump1
+cd /ssh:cpatti@wak-prod-jump1:~
+cd /ssh:cpatti@wak-prod-jump1:~
+cd /ssh:cpatti@wak-prod-jump1:~
+exit
+cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+cd "/ssh:wcroftonJBscript_dco@wak-prod-jump1|ssh:root@wak-prod-knife:~"
 exit

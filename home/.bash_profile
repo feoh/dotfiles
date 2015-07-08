@@ -14,8 +14,10 @@ export BASH_IT_THEME='candy'
 #export GIT_HOSTING='git@git.domain.com'
 
 # Set my editor and git editor
-export EDITOR='emacs'
-export GIT_EDITOR='emacs'
+export EDITOR='emacsclient'
+export GIT_EDITOR='emacsclient'
+
+export GITHUB_API_TOKEN="837a3bd15b8c13aa6a2e731a8f64f30f1b67f6a6"
 
 # Don't check mail when opening terminal.
 unset MAILCHECK

@@ -13,6 +13,13 @@
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
   )
 
+;; Make the mouse-wheel support not do insane things with the OSX trackpad :)
+
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
      package-archives )
