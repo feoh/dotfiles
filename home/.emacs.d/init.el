@@ -20,6 +20,9 @@
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
+(setenv "EDITOR" "emacsclient")
+(setenv "VISUAL" "emacsclient")
+
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
      package-archives )
