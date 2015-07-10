@@ -15,7 +15,9 @@ export BASH_IT_THEME='candy'
 
 # Set my editor and git editor
 export EDITOR='emacsclient'
+export VISUAL='emacsclient'
 export GIT_EDITOR='emacsclient'
+export ALTERNATE_EDITOR='vim'
 
 export HOMEBREW_GITHUB_API_TOKEN="837a3bd15b8c13aa6a2e731a8f64f30f1b67f6a6"
 

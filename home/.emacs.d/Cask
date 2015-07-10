@@ -15,6 +15,7 @@
 (depends-on "deferred")
 (depends-on "ein")
 (depends-on "ein-mumamo")
+(depends-on "el-pocket")
 (depends-on "epl")
 (depends-on "erc-hl-nicks")
 (depends-on "exec-path-from-shell")
@@ -50,3 +51,4 @@
 (depends-on "vlf")
 (depends-on "web-completion-data")
 (depends-on "websocket")
+(depends-on "yasnippet")
