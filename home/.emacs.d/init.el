@@ -1,3 +1,5 @@
+;; Personal emacs setup
+
 (add-to-list 'default-frame-alist '(font . "Menlo:pixelsize=24:weight=normal:slant=normal:width=normal:spacing=100:scalable=true" ))
 
 ;; Added by Package.el.  This must come before configurations of
@@ -11,6 +13,9 @@
   (setq mac-option-modifier 'alt)
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+  )
+(when (eq system-type 'gnu/linux)
+  (require 'cask "~/.cask/cask.el")
   )
 
 ;; Make the mouse-wheel support not do insane things with the OSX trackpad :)
@@ -32,7 +37,7 @@
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (load custom-file t)
 
-(require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
+
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)

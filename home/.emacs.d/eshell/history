@@ -1,7 +1,3 @@
-ls -ld .bashrc
-cat .bashrc
-ls -ld .bash_profile
-cat .emacs
 ps -deaf | grep bash
 ps -deaf | grep sh
 ps -deaf | more
@@ -125,4 +121,8 @@ cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
 cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
 cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
 cd "/ssh:wcroftonJBscript_dco@wak-prod-jump1|ssh:root@wak-prod-knife:~"
+exit
+echo $VISUAL
+echo $SHELL
+echo $EDITOR
 exit
