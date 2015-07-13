@@ -10,6 +10,7 @@
 
 ;; OSX key bindings
 (when (eq system-type 'darwin) ;; mac specific settings
+  (require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
   (setq mac-option-modifier 'alt)
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
@@ -61,6 +62,16 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
+
+
+;; Company configs
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 1)
+(setq company-auto-complete nil)
+(setq company-minimum-prefix-length 0)
+
+(setq-default tab-always-indent 'complete)
+(setq indent-line-function 'indent-for-tab-command)
+
+;; Anaconda mode
 (add-hook 'python-mode-hook 'anaconda-mode)
-
-
