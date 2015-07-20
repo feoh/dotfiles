@@ -1,11 +1,3 @@
-ps -deaf | grep bash
-ps -deaf | grep sh
-ps -deaf | more
-ps -deaf 
-mv .bash_profile .not_bash_profile
-mv .bashrc .not_bashrc
-cd
-ssh chl-prod-jump
 ssh Could not resolve hostname chl-prod-jump: nodename nor servname provided, or not known
 ssh chl-prod-jump1
 ssh root@s43-infratest-pxechef01
@@ -125,4 +117,12 @@ exit
 echo $VISUAL
 echo $SHELL
 echo $EDITOR
+exit
+cd ..
+cd ..
+ls
+cd Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure/
+ls
+git log
+fg
 exit

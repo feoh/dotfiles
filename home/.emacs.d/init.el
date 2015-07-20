@@ -73,5 +73,14 @@
 (setq-default tab-always-indent 'complete)
 (setq indent-line-function 'indent-for-tab-command)
 
-;; Anaconda mode
+;; Robe mode for Ruby
+(add-hook 'ruby-mode-hook 'robe-mode)
+
+(eval-after-load 'company
+  '(push 'company-robe company-backends))
+
+;; Anaconda mode for Python
 (add-hook 'python-mode-hook 'anaconda-mode)
+
+;; Syntax checking good! :)
+(add-hook 'after-init-hook #'global-flycheck-mode)
