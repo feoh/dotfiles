@@ -57,10 +57,17 @@ alias nukevagrant='knife node delete -y cpatti-vagrant;knife client delete -y cp
 alias gpom='git pull origin master'
 alias gcm='git checkout master'
 alias gprom='git pull --rebase origin master'
-source /usr/local/bin/z.sh
+
+if [[ `uname -s` == "Linux" ]];  then
+	source /usr/local/bin/z.sh
+elif [[ `uname -s` == "Darwin" ]]; then
+	. `brew --prefix`/etc/profile.d/z.sh
+else
+	echo "You're not on a Mac or Linux. No z for you! :)"
+fi
 
 export EDITOR=emacs
 export VISUAL=emacs
 
-export PATH="$HOME/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$HOME/bin:$HOME/.cask/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
