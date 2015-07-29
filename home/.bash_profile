@@ -21,6 +21,9 @@ export ALTERNATE_EDITOR='vim'
 
 export HOMEBREW_GITHUB_API_TOKEN="837a3bd15b8c13aa6a2e731a8f64f30f1b67f6a6"
 
+# Tell Python to always use unicode.
+export PYTHONIOENCODING=utf-8
+
 # Don't check mail when opening terminal.
 unset MAILCHECK
 
