@@ -41,6 +41,7 @@
 (depends-on "magit")
 (depends-on "magit-popup")
 (depends-on "markdown-mode")
+(depends-on "multi-term")
 (depends-on "omni-scratch")
 (depends-on "org")
 (depends-on "org-trello")

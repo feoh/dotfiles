@@ -84,3 +84,6 @@
 
 ;; Syntax checking good! :)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; Gnus NNTP for free :)
+ (setq gnus-select-method  '(nntp "nntp.aioe.org"))
