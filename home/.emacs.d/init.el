@@ -95,3 +95,6 @@
 ;; and select Bristish dictionary
 (setq ispell-local-dictionary-alist
       `((nil "[[:alpha:]]" "[^[:alpha:]]" "[']" t ("-d" "en_US") nil utf-8)))
+
+;; Gnus NNTP for free :)
+ (setq gnus-select-method  '(nntp "nntp.aioe.org"))
