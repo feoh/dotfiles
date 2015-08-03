@@ -98,3 +98,6 @@
 
 ;; Gnus NNTP for free :)
  (setq gnus-select-method  '(nntp "nntp.aioe.org"))
+
+;; prevent silly initial splash screen
+(setq inhibit-splash-screen t)
