@@ -14,6 +14,9 @@
   (setq mac-option-modifier 'alt)
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+  ;; Fix annoying ls does not support --dired error
+  (setq ls-lisp-use-insert-directory-program t)
+  (setq insert-directory-program "gls")
   )
 (when (eq system-type 'gnu/linux)
   (require 'cask "~/.cask/cask.el")
@@ -87,3 +90,20 @@
 
 ;; Gnus NNTP for free :)
  (setq gnus-select-method  '(nntp "nntp.aioe.org"))
+
+;; Insert current date
+(defun insert-current-date () (interactive)
+    (insert (shell-command-to-string "echo -n $(date +%Y-%m-%d)")))
+
+;; Configure backups in a sane way
+(setq
+   backup-by-copying t      ; don't clobber symlinks
+   backup-directory-alist
+    '(("." . "~/.saves"))    ; don't litter my fs tree
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)       ; use versioned backups
+
+(provide 'init)
+;;; init.el ends here
