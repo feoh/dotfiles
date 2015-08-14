@@ -87,3 +87,6 @@
 
 ;; Gnus NNTP for free :)
  (setq gnus-select-method  '(nntp "nntp.aioe.org"))
+
+;; Utter silliness! Must have Zippy the Pinhead quotes! Yow!
+(require 'yow)
