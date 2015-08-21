@@ -12,6 +12,7 @@
 (depends-on "company-inf-ruby")
 (depends-on "company-restclient")
 (depends-on "company-web")
+(depends-on "confluence")
 (depends-on "dash")
 (depends-on "dash-at-point")
 (depends-on "dayone")

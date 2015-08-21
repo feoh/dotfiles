@@ -1,5 +1,3 @@
-/Users/cpatti/Dropbox/src/chef/pelican_blog/recipes
-/Users/cpatti/Dropbox/src/chef/pelican_blog
 /scp:root@s43-infratest-knife01:/root
 /Users/cpatti/src/carbonite/Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure/carbpyinfra
 /scp:root@s43-qg2-bld001:/root
@@ -10,11 +8,9 @@
 /Users/cpatti/.homesick/repos/dotfiles/home/.emacs.d
 /ssh:cpatti@wak-prod-jump1:/home/jumpboxaccess_emergency
 /ssh:cpatti@wak-prod-jump1:/home/jumpboxaccess_emergency
-~
 /Users/cpatti/src/carbonite/NetEng
 /Users/cpatti/src/carbonite
 /Users/cpatti/src/carbonite/Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure
-/Users/cpatti
 /ssh:cloudinfra@wak-prod-confman1:/home/cloudinfra/NetEng
 /ssh:cloudinfra@wak-prod-confman1:/home/cloudinfra/NetEng/AutomationScripts
 /ssh:cloudinfra@wak-prod-confman1:/home/cloudinfra/NetEng/AutomationScripts
@@ -23,3 +19,14 @@
 /Users/cpatti/src/carbonite/NetEng/AutomationScripts
 /ssh:cloudinfra@wak-prod-confman1:/home/cloudinfra
 /ssh:cloudinfra@wak-prod-confman1:/home/cloudinfra/NetEng
+/Users/cpatti
+/ssh:root@s43-infratest-s1:/root
+/Users/cpatti/src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default
+/ssh:root@s43-infratest-s1:/root
+~
+/ssh:cloudinfra@wak-prod-confman1:/home/cloudinfra
+/Users/cpatti/src/carbonite/chef-repo/cookbooks/s43-xjumpbox
+/Users/cpatti/src/carbonite/chef-repo/cookbooks/s43-xjumpbox/recipes
+/Users/cpatti/src/carbonite/chef-repo/cookbooks
+/Users/cpatti/src/carbonite/chef-repo
+/Users/cpatti/src/carbonite/chef-repo/cookbooks

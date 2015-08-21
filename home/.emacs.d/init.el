@@ -17,6 +17,7 @@
   ;; Fix annoying ls does not support --dired error
   (setq ls-lisp-use-insert-directory-program t)
   (setq insert-directory-program "gls")
+  (setq mac-emulate-three-button-mouse t)
   )
 (when (eq system-type 'gnu/linux)
   (require 'cask "~/.cask/cask.el")
@@ -121,6 +122,14 @@
 
 ;; prevent silly initial splash screen
 (setq inhibit-splash-screen t)
+
+;; MobileOrg configuration
+;; Set to the location of your Org files on your local system
+(setq org-directory "~/Documents/OrgFiles")
+;; Set to the name of the file where new notes will be stored
+(setq org-mobile-inbox-for-pull "~/Documents/OrgFiles/flagged.org")
+;; Set to <your Dropbox root directory>/MobileOrg.
+(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
 
 (provide 'init)
 ;;; init.el ends here

@@ -1,61 +1,3 @@
-ls
-cd python setup.py bdist_rpm
-python
-python setup.py bdist_rpm
-exit
-cd
-cd /cpatti@wak-prod-jump1|root@wak-s43-prod-copybox01:~
-cd /cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
-/cpatti@wak-prod-jump1:~|root@wak-s43-prod-copybox01:~
-exit
-pwd
-exit
-cd
-homesick commit
-export EDITOR=emacsclient
-export VISUAL=emacsclient
-homesick commit
-homesick push
-cd
-echo $VISUAL
-echo $EDITOR
-exit
-echo $VISUAL
-echo $EDITOR
-exit
-cd
-clear
-
-pwd
-exit
-ssh wak-prod-jump1
-cd /ssh:cpatti@wak-prod-jump|ssh:root@wak-prod-knife
-cd /ssh:cpatti@wak-prod-jump|ssh:root@wak-prod-knife:
-cd /ssh:cpatti@wak-prod-jump:|ssh:root@wak-prod-knife:
-cd /ssh:cpatti@wak-prod-jump|ssh:root@wak-prod-knife:/
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:/
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
-cd /ssh:cpatti@wak-prod-jump1
-cd /cpatti@wak-prod-jump1
-cd cpatti@wak-prod-jump1
-cd /ssh:cpatti@wak-prod-jump1:/root
-cd /ssh:cpatti@wak-prod-jump1:/~
-cd /ssh:cpatti@wak-prod-jump1:
-ssh root@wak-prod-knife
-exit
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife"
-cd "/ssh:cpatti@wak-prod-jump1|root@wak-prod-knife"
-cd /ssh:cpatti@wak-prod-jump1|root@wak-prod-knife
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
-cd /ssh:cpatti@wak-prod-jump1|/ssh:root@wak-prod-knife
-cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
-exit
-cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
-cd ssh:cpatti@wak-prod-jump1
-cd /ssh:cpatti@wak-prod-jump1
-cd /ssh:cpatti@wak-prod-jump1:~
 exit
 cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
 cd /ssh:cpatti@wak-prod-jump1:~
@@ -126,3 +68,61 @@ cd /ssh:chl-prod-jump1|/ssh:chl-prod-knife:~
 \\
 cd /ssh:chl-prod-jump1|/ssh:chl-prod-knife:~
 cd /ssh:chl-prod-jump1|/ssh:jumpboxaccess_emergency@chl-prod-knife:~
+ls
+scp set_service_state.sh root@s43-infratest-s1:~
+cd /ssh:root@s43-infratest-s1:~
+./set_service_state.sh 
+popd
+cd
+pwd
+cd src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
+scp set_service_state.sh root@s43-infratest-s1:~
+cd /ssh:root@s43-infratest-s1:~
+./set_service_state.sh 
+./set_service_state.sh maint -m
+cd src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
+cd ~/src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
+scp set_service_state.sh root@s43-infratest-s1:~
+cd /ssh:root@s43-infratest-s1:~
+./set_service_state.sh 
+cd ~/src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
+scp set_service_state.sh root@s43-infratest-s1:~
+cd /ssh:root@s43-infratest-s1:~
+./set_service_state.sh 
+./set_service_state.sh running -m
+./set_service_state.sh maint -m
+cd ~/src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
+scp set_service_state.sh root@s43-infratest-s1:~
+cd /ssh:root@s43-infratest-s1:~
+./set_service_state.sh 
+./set_service_state.sh maint -m
+./set_service_state.sh maint -m
+./set_service_state.sh running -m
+exit
+pwd
+mv .bashrc .not_bashrc
+ls .bash*
+ls -ld .bash_profile
+mv .bash_profile .not_bash_profile
+cd chef-repo
+cd src/carbonite/chef-repo/
+qc2movie 
+exit
+ssh wak-prod-jump1
+ssh root@wak-prod-confman01
+ssh root@wak-prod-confman1
+sh cloudinfra@wak-prod-confman1
+ssh cloudinfra@wak-prod-confman1
+cd /ssh:cloudinfra@wak-prod-confman1
+cd /ssh:cloudinfra@wak-prod-confman1:~
+run-python
+exit
+cd ../..
+knife bootstrap s43-infratest-xjump2 -r 'recipe[ci-roles::xjumpbox]' -c ~/.chef/knife_INFRATEST.rb
+exit
+cd ../..
+cd ..
+cd cookbooks
+grep -IUr --color "^M"
+grep --recursive -IUr --color "^M"
+exit
