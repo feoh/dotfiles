@@ -1,9 +1,3 @@
-exit
-cd ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
-cd /ssh:cpatti@wak-prod-jump1:~
-exit
-cd /ssh:cpatti@wak-prod-jump1:~
-cd ~
 cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:~
 cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:~
 cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:
@@ -125,4 +119,10 @@ cd ..
 cd cookbooks
 grep -IUr --color "^M"
 grep --recursive -IUr --color "^M"
+exit
+mv .bashrc .moorc
+mv .moorc .bashrc
+ls .bash*
+mv .bash_profile .moo_profile
+mv .moo_profile .bash_profile
 exit

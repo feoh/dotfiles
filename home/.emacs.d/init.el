@@ -18,6 +18,8 @@
   (setq ls-lisp-use-insert-directory-program t)
   (setq insert-directory-program "gls")
   (setq mac-emulate-three-button-mouse t)
+  (let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+  (normal-top-level-add-subdirs-to-load-path))
   )
 (when (eq system-type 'gnu/linux)
   (require 'cask "~/.cask/cask.el")
