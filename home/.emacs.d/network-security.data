@@ -1,3 +1,4 @@
 (
+ (:id "sha1:b5696987fedd10cca205d3dc4560db4ddd4d3bda" :fingerprint "sha1:ef:a9:bb:58:b9:0e:b1:2b:8f:20:bf:a3:04:03:1e:e7:17:af:43:f6" :host "nntp.aioe.org:nntp" :conditions (:expired :invalid))
  (:id "sha1:85457c729378cc93c732b6a3941c8e4f9c2e60f3" :fingerprint "sha1:ab:a6:d7:6a:b3:d3:63:fa:19:0d:65:41:60:23:6e:ef:d3:2a:46:dc" :host "marmalade-repo.org:443" :conditions (:unknown-ca :invalid))
 )
