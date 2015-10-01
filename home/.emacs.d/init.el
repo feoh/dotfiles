@@ -68,11 +68,11 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
-
+(elpy-enable)
 
 ;; Company configs
-(add-hook 'after-init-hook 'global-company-mode)
-(setq company-idle-delay 1)
+; (add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 5)
 (setq company-auto-complete nil)
 (setq company-minimum-prefix-length 0)
 
@@ -84,12 +84,6 @@
 
 (eval-after-load 'company
   '(push 'company-robe company-backends))
-
-;; Anaconda mode for Python
-(add-hook 'python-mode-hook 'anaconda-mode)
-
-;; Syntax checking good! :)
-(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; spelling                                                               ;;
