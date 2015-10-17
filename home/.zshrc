@@ -74,4 +74,7 @@ export PYTHONIOENCODING=utf-8
 
 export PATH="$HOME/bin:$HOME/.cask/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
+# Yay Rost!
+export RUST_SRC_PATH="$HOME/Dropbox/src/rust-dist/src"
+
 eval `/usr/libexec/path_helper -s`

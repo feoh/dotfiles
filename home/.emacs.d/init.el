@@ -119,13 +119,31 @@
 ;; prevent silly initial splash screen
 (setq inhibit-splash-screen t)
 
-;; MobileOrg configuration
-;; Set to the location of your Org files on your local system
-(setq org-directory "~/Documents/OrgFiles")
-;; Set to the name of the file where new notes will be stored
-(setq org-mobile-inbox-for-pull "~/Documents/OrgFiles/flagged.org")
-;; Set to <your Dropbox root directory>/MobileOrg.
-(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+;; Rust! :)
+;; Set path to racer binary
+(setq racer-cmd "/Users/cpatti/bin/racer")
+
+;; Set path to rust src directory
+(setq racer-rust-src-path "/Users/cpatti/Dropbox/src/rust-dist/src/")
+
+;; Load rust-mode when you open `.rs` files
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
+;; Setting up configurations when you load rust-mode
+(add-hook 'rust-mode-hook
+     '(lambda ()
+     ;; Enable racer
+     (racer-activate)
+	 ;; Hook in racer with eldoc to provide documentation
+     (racer-turn-on-eldoc)
+	 ;; Use flycheck-rust in rust-mode
+     (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+	 ;; Use company-racer in rust mode
+     (set (make-local-variable 'company-backends) '(company-racer))
+	 ;; Key binding to jump to method definition
+     (local-set-key (kbd "M-.") #'racer-find-definition)
+	 ;; Key binding to auto complete and indent
+     (local-set-key (kbd "TAB") #'racer-complete-or-indent)))
 
 (provide 'init)
 ;;; init.el ends here
