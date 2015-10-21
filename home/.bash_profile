@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Hate bash_it. Hate hate HATE! :)
 # Load RVM, if you are using it
 
 # Path to the bash it configuration

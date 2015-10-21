@@ -1,86 +1,3 @@
-cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:~
-cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:~
-cd /ssh:cpatti@wak-prod-jump1:~|ssh:root@wak-prod-knife:
-cd /ssh:cpatti@wak-prod-jump1:|ssh:root@wak-prod-knife:
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
-cd /ssh:cpatti@wak-prod-jump1
-cd /ssh:cpatti@wak-prod-jump1:~
-cd /ssh:cpatti@wak-prod-jump1:~
-cd /ssh:cpatti@wak-prod-jump1:~
-exit
-cd /ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-cd "/ssh:cpatti@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-cd "/ssh:wcroftonJBscript_dco@wak-prod-jump1|ssh:root@wak-prod-knife:~"
-exit
-echo $VISUAL
-echo $SHELL
-echo $EDITOR
-exit
-cd ..
-cd ..
-ls
-cd Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure/
-ls
-git log
-fg
-exit
-exit
-cd "ssh:cloudinfra@wak-prod-confman1:~"
-cd "/ssh:cloudinfra@wak-prod-confman1:~"
-ls
-cd
-cd "/ssh:cloudinfra@wak-prod-confman1:~"
-ls
-cd ./NetEng
-cd AutomationScripts/
-ls
-git status
-git reset --hard
-git pull origin TA54091
-cd "/ssh:cpatti@chl-prod-jump1|cpatti@chl-prod-knife:~"
-cd "/ssh:cpatti@chl-prod-jump1|ssh:cpatti@chl-prod-knife:~"
-cd "/ssh:cpatti@chl-prod-jump1|ssh:cpatti@chl-prod-knife:~"
-exit
-cd /ssh:root@s43-qg2-bld001:~
-run-python
-exit
-cd /ssh:cloudinfra@wak-prod-confman1:~
-rm -rf NetEng_busted/
-cd NetEng/
-ls
-git checkout TA54091
-git fetch
-git pull origin TA54091
-cd /ssh:chl-prod-jump1|/ssh:chl-prod-knife:~
-\\
-cd /ssh:chl-prod-jump1|/ssh:chl-prod-knife:~
-cd /ssh:chl-prod-jump1|/ssh:jumpboxaccess_emergency@chl-prod-knife:~
-ls
-scp set_service_state.sh root@s43-infratest-s1:~
-cd /ssh:root@s43-infratest-s1:~
-./set_service_state.sh 
-popd
-cd
-pwd
-cd src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
-scp set_service_state.sh root@s43-infratest-s1:~
-cd /ssh:root@s43-infratest-s1:~
-./set_service_state.sh 
-./set_service_state.sh maint -m
-cd src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
-cd ~/src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
-scp set_service_state.sh root@s43-infratest-s1:~
-cd /ssh:root@s43-infratest-s1:~
-./set_service_state.sh 
-cd ~/src/carbonite/chef-repo/cookbooks/carbonitefilesystem/files/default/
-scp set_service_state.sh root@s43-infratest-s1:~
 cd /ssh:root@s43-infratest-s1:~
 ./set_service_state.sh 
 ./set_service_state.sh running -m
@@ -126,3 +43,86 @@ ls .bash*
 mv .bash_profile .moo_profile
 mv .moo_profile .bash_profile
 exit
+cargo build
+cargo build
+cargo run
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo run
+cargo run
+cargo run
+cargo build
+cargo run
+cargo build
+cargo build
+cargo run
+cargo build
+cargo run
+ls
+exit
+cd src/Dropbox/rust
+ls
+cd src/Dropbox/
+cd Dropbox/src/rust
+ls
+cargo new dining_philosophers
+cd dining_philosophers/
+cargo build
+cargo run
+ls
+ls target
+ls target/debug
+cargo build --release
+cargo run
+ls target/release/
+ls target/release//build
+ls target/release/native/
+cargo build
+cargo build --release
+cargo run
+cargo build --release
+ls
+cat main.rs
+cargo
+cargo clean
+cargo run
+cargo build --release
+cargo run
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo run
+cargo build
+cargo build
+cargo run
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo build
+cargo run
+exit
+cd Dropbox/src/rust/dining_philosophers/
+cargo build
+cargo build
+cargo build
+cargo clean
+cargo build
+cargo build --debug
+cargo build
+cargo run
+exit
+cd
+cd Dropbox/src/rust/dining_philosophers/
+cargo build
+cargo run
