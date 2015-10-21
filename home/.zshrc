@@ -71,8 +71,8 @@ export RUST_SRC_PATH="$HOME/Dropbox/src/rust-dist/src"
 
 if [[ `uname -s` == "Linux" ]];  then
 	source /usr/local/bin/z.sh
-	eval `/usr/libexec/path_helper -s`
 elif [[ `uname -s` == "Darwin" ]]; then
+	eval `/usr/libexec/path_helper -s`
 	. `brew --prefix`/etc/profile.d/z.sh
 else
 	echo "You're not on a Mac or Linux. No z for you! :)"
