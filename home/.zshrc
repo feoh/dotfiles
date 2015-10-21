@@ -58,14 +58,6 @@ alias gpom='git pull origin master'
 alias gcm='git checkout master'
 alias gprom='git pull --rebase origin master'
 
-if [[ `uname -s` == "Linux" ]];  then
-	source /usr/local/bin/z.sh
-elif [[ `uname -s` == "Darwin" ]]; then
-	. `brew --prefix`/etc/profile.d/z.sh
-else
-	echo "You're not on a Mac or Linux. No z for you! :)"
-fi
-
 export EDITOR=emacs
 export VISUAL=emacs
 
@@ -77,4 +69,11 @@ export PATH="$HOME/bin:$HOME/.cask/bin:/usr/local/sbin:/usr/local/bin:/opt/chefd
 # Yay Rost!
 export RUST_SRC_PATH="$HOME/Dropbox/src/rust-dist/src"
 
-eval `/usr/libexec/path_helper -s`
+if [[ `uname -s` == "Linux" ]];  then
+	source /usr/local/bin/z.sh
+elif [[ `uname -s` == "Darwin" ]]; then
+	eval `/usr/libexec/path_helper -s`
+	. `brew --prefix`/etc/profile.d/z.sh
+else
+	echo "You're not on a Mac or Linux. No z for you! :)"
+fi
