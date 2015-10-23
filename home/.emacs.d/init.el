@@ -11,7 +11,7 @@
 ;; OSX key bindings
 (when (eq system-type 'darwin) ;; mac specific settings
   (require 'cask "/usr/local/Cellar/cask/0.7.2/cask.el")
-  (setq mac-option-modifier 'alt)
+  (setq mac-option-modifier 'super)
   (setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
   ;; Fix annoying ls does not support --dired error
@@ -134,6 +134,10 @@
 (global-set-key "\t" 'company-complete-common)
 
 (setq company-tooltip-align-annotations t)
+
+;; org-mode - persist 'clocked' tasks.
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
 
 (provide 'init)
 ;;; init.el ends here

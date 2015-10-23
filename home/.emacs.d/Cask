@@ -57,6 +57,8 @@
 (depends-on "org")
 (depends-on "org-bullets")
 (depends-on "org-mac-link")
+(depends-on "org-pomodoro")
+(depends-on "org-present")
 (depends-on "org-trello")
 (depends-on "package-build")
 (depends-on "pallet")
