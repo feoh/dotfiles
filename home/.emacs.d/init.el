@@ -60,18 +60,19 @@
 
 (setq magit-last-seen-setup-instructions "1.4.0")
 
-(ido-mode 1)
-(setq ido-everywhere t)
-(setq ido-enable-flex-matching t)
+;; (ido-mode 1)
+;; (setq ido-everywhere t)
+;; (setq ido-enable-flex-matching t)
 
 (require 'helm-config)
+(helm-mode 1)
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 
 (elpy-enable)
 
 ;; Company configs
-; (add-hook 'after-init-hook 'global-company-mode)
+ (add-hook 'after-init-hook 'global-company-mode)
 (setq company-idle-delay 5)
 (setq company-auto-complete nil)
 (setq company-minimum-prefix-length 0)
@@ -79,11 +80,11 @@
 (setq-default tab-always-indent 'complete)
 (setq indent-line-function 'indent-for-tab-command)
 
-;; Robe mode for Ruby
-(add-hook 'ruby-mode-hook 'robe-mode)
+;; ;; Robe mode for Ruby
+;; (add-hook 'ruby-mode-hook 'robe-mode)
 
-(eval-after-load 'company
-  '(push 'company-robe company-backends))
+;; (eval-after-load 'company
+;;   '(push 'company-robe company-backends))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; spelling                                                               ;;

@@ -37,8 +37,9 @@ export IRC_CLIENT='irssi'
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
+export GOPATH="$HOME/src/personal/go"
 
-export PATH="$HOME/bin:$HOME/anaconda/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/bin:$HOME/anaconda/bin:/usr/local/bin:$GOPATH/bin:$PATH"
 
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
