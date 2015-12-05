@@ -58,8 +58,9 @@ alias gpom='git pull origin master'
 alias gcm='git checkout master'
 alias gprom='git pull --rebase origin master'
 
-export EDITOR=emacs
-export VISUAL=emacs
+export EDITOR=emacsclient
+export VISUAL=emacsclient
+export ALTERNATE_EDITOR=vi
 
 # Tell Python to always use unicode.
 export PYTHONIOENCODING=utf-8
@@ -67,10 +68,13 @@ export PYTHONIOENCODING=utf-8
 # Golang!
 export GOPATH=$HOME/src/personal/go
 
-export PATH="$HOME/bin:$HOME/anaconda/bin:$HOME/.cask/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GOPATH/bin"
+export PATH="$HOME/bin:$HOME/.cask/bin:/usr/local/sbin:/usr/local/bin:/opt/chefdk/embedded/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin/:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$GOPATH/bin"
 
 # Yay Rost!
 export RUST_SRC_PATH="$HOME/Dropbox/src/rust-dist/src"
+
+# Anaconda
+export PATH=$HOME/anaconda/bin:$PATH
 
 if [[ `uname -s` == "Linux" ]];  then
 	source /usr/local/bin/z.sh
