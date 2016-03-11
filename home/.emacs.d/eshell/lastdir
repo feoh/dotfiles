@@ -1,4 +1,3 @@
-/scp:root@s43-qg2-bld001:/root/chris/Server-4.3-Linux
 /scp:root@s43-qg2-bld001:/root/chris/Server-4.3-Linux/Server/Server/Library/CarboniteInfrastructure
 /Users/cpatti/src/carbonite/chef-repo/cookbooks/s43-conversion/files/default
 /ssh:cpatti@wak-prod-jump1:/home/jumpboxaccess_emergency
@@ -31,3 +30,4 @@
 /Users/cpatti/.homesick/repos/dotfiles/home/.emacs.d
 /Users/cpatti
 /Users/cpatti/Dropbox/src/rust/dining_philosophers
+~
