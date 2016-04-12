@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-alias home='ssh -v -D 8907 -i ~/.ssh/id_rsa_personal feoh@linode.feoh.org'
+alias home='ssh -v -D 8907 -i ~/.ssh/id_rsa_personal feoh@amicable.feoh.org'
 alias toycraft='ssh feoh@toycraft.feoh.org'
 alias nukevagrant='knife node delete -y cpatti-vagrant;knife client delete -y cpatti-vagrant'
 alias gpom='git pull origin master'
@@ -75,6 +75,7 @@ export RUST_SRC_PATH="$HOME/Dropbox/src/rust-dist/src"
 
 # Anaconda
 export PATH=$HOME/anaconda/bin:$PATH
+echo "PATH=$PATH"
 
 if [[ `uname -s` == "Linux" ]];  then
 	source /usr/local/bin/z.sh
