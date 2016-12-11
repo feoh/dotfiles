@@ -39,7 +39,7 @@ source $BASH_IT/bash_it.sh
 
 export GOPATH="$HOME/src/personal/go"
 
-export PATH="$HOME/bin:$HOME/anaconda/bin:/usr/local/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.chefdk/gem/ruby/2.3.0/bin:/usr/local/bin:$GOPATH/bin:$PATH"
 
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
@@ -47,5 +47,3 @@ alias t="/Users/cpatti/.chefdk/gem/ruby/2.1.0/bin/t"
 eval "$(chef shell-init bash)"
 
 
-# added by Anaconda2 2.4.0 installer
-export PATH="/Users/cpatti/anaconda/bin:$PATH"
