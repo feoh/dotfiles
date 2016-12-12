@@ -39,7 +39,7 @@ source $BASH_IT/bash_it.sh
 
 export GOPATH="$HOME/src/personal/go"
 
-export PATH="$HOME/bin:$HOME/.chefdk/gem/ruby/2.3.0/bin:/usr/local/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.chefdk/gem/ruby/2.3.0/bin:/usr/local/bin:$GOPATH/bin:$HOME/.cask/bin:$PATH"
 
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
@@ -47,3 +47,6 @@ alias t="/Users/cpatti/.chefdk/gem/ruby/2.1.0/bin/t"
 eval "$(chef shell-init bash)"
 
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
