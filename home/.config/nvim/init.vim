@@ -1,8 +1,3 @@
-    " Specify python progs manually because we mess around with virtual envs alot.
-    " Pick up Ruby and Node from rbenv and nvm respectively. If that ever needs to
-    " change, can manual specify here similar.
-    let g:python_host_prog = expand('~/.pyenv/versions/2.7.14/bin/python2')
-    let g:python3_host_prog = expand('~/.pyenv/versions/3.6.4/bin/python3')
      
     " Spaces & Tabs
     set tabstop=4       " number of visual spaces per TAB
@@ -43,6 +38,12 @@
     " Deoplete
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     let g:deoplete#enable_at_startup = 1
+
+    let g:LanguageClient_loggingLevel = "DEBUG"
+    let g:LanguageClient_serverCommands = {
+            \ 'python': '/home/cpatti/.pyenv/shims/python2',
+            \ 'python3': '/home/cpatti/.pyenv/shims/python3',
+           \ }
      
     " NERDTree
     Plug 'scrooloose/nerdtree', { 'do': ':UpdateRemotePlugins' }
@@ -68,21 +69,6 @@
     colorscheme darkblue
      
      
-    " LSP config
-    " Required for operations modifying multiple buffers like rename.
-    set hidden
-     
-    if !empty($VIRTUAL_ENV) && filereadable($VIRTUAL_ENV . "/bin/python2")
-        let pyls = [expand("~/.pyenv/versions/pyls2/bin/pyls")]
-    else
-        let pyls = [expand("~/.pyenv/versions/pyls/bin/pyls")]
-    endif
-     
-    let g:LanguageClient_loggingLevel = "DEBUG"
-    let g:LanguageClient_serverCommands = {
-            \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-            \ 'python': pyls
-            \ }
      
     nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
     nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
