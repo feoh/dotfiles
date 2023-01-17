@@ -61,6 +61,10 @@ require('packer').startup(function(use)
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
+  -- Blurgh cpatti 1/16/2023 can't figure out how to make custom plugins go.
+  use 'mfussenegger/nvim-dap'
+  use 'mfussenegger/nvim-dap-python'
+
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -424,6 +428,9 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+-- cpatti neovim-day-python setup
+require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
