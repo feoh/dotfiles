@@ -8,3 +8,7 @@ vim.keymap.set('n','<Leader>lp',function() require('dap').set_breakpoint(nil, ni
 vim.keymap.set('n','<Leader>dr',function() require('dap').repl.open() end)
 vim.keymap.set('n','<Leader>dl',function() require('dap').run_last() end)
 
+-- Options
+
+-- Syntax highlight YAML front matter in Markdown files.
+vim.o.vim_markdown_frontmatter = 1
